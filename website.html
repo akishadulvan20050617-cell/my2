@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Video to Audio Studio - Download</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; }
+        
+        /* Background එකට පොඩි ලස්සනක් */
+        body::before { content: ''; position: absolute; width: 300px; height: 300px; background: #3b82f6; filter: blur(150px); top: -50px; left: -50px; z-index: -1; }
+        body::after { content: ''; position: absolute; width: 300px; height: 300px; background: #8b5cf6; filter: blur(150px); bottom: -50px; right: -50px; z-index: -1; }
+
+        .card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); padding: 50px; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); text-align: center; border: 1px solid rgba(255,255,255,0.1); width: 100%; max-width: 500px; animation: fadeIn 1s ease-out; }
+        
+        .logo { width: 100px; margin-bottom: 20px; filter: drop-shadow(0 0 10px #3b82f6); }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 10px; background: linear-gradient(to right, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        p { color: #94a3b8; margin-bottom: 30px; font-weight: 300; }
+
+        .features { text-align: left; margin: 20px 0; font-size: 0.9rem; color: #cbd5e1; list-style: none; display: inline-block; }
+        .features li { margin-bottom: 10px; display: flex; align-items: center; }
+        .features li::before { content: '✓'; color: #22c55e; font-weight: bold; margin-right: 10px; }
+
+        /* පට්ටම Download Button එක */
+        .download-btn { display: flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(45deg, #2563eb, #7c3aed); color: white; text-decoration: none; padding: 18px 36px; border-radius: 16px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3); border: none; cursor: pointer; }
+        .download-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(37, 99, 235, 0.4); filter: brightness(1.1); }
+        .download-btn:active { transform: translateY(-1px); }
+
+        .footer { margin-top: 30px; font-size: 0.75rem; color: #64748b; }
+        
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="logo.ico" alt="Logo" class="logo">
+        <h1>Ultimate Converter</h1>
+        <p>Convert MP4 to High-Quality MP3 with zero effort. Free, fast, and secure.</p>
+        
+        <ul class="features">
+            <li>Batch Convert Support</li>
+            <li>No Internet Required</li>
+            <li>High Bitrate MP3 (320k)</li>
+            <li>Built-in Audio Trimming</li>
+        </ul>
+
+        <a href="Setup.zip" download class="download-btn">
+            <span>🚀 Download Setup v2.0</span>
+        </a>
+
+        <div class="footer">
+            Developed by <strong>Akisha Dulvan</strong><br>
+            © 2026 All Rights Reserved
+        </div>
+    </div>
+
+</body>
+</html>
